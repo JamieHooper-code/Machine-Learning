@@ -70,9 +70,9 @@ print("\n")
 # PRINT PREDICTIONS
 for x in range(3):
     print(f"""
-PREDICTED VALUES: {predictions[x]}
-INPUT DATA: {x_test[x]}
-ACTUAL VALUE: {y_test[x]}
+PREDICTED VALUES [G3]: {predictions[x]}
+INPUT DATA [G1 G2 STUDYHOURS FAILURES ABSENCES]: {x_test[x]}
+ACTUAL VALUE [G3]: {y_test[x]}
     """)
 
 input("Press enter to continue...")
@@ -103,7 +103,7 @@ print("Model loaded")
 
 
 # PLOT DATA
-p = "G1"
+p = "G2"
 style.use("ggplot")
 pyplot.scatter(data[p], data["G3"])
 pyplot.xlabel(p)

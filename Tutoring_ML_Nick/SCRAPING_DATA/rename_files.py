@@ -1,9 +1,9 @@
 import os
 
-# Specify the directory containing the historic_files
-directory = "historic_files"
+# Specify the directory containing the historic_files_2004
+directory = "historic_files_2004"
 
-# Loop through all the historic_files in the directory
+# Loop through all the historic_files_2004 in the directory
 for filename in os.listdir(directory):
     # Check if the filename matches the expected format
     if filename.startswith("statemonthly_") and filename.endswith(".xls"):

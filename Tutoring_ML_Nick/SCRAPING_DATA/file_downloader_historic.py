@@ -2,18 +2,21 @@ import os
 import requests
 from tqdm import tqdm
 
-# Create a folder named 'historic_files' if it doesn't exist
-if not os.path.exists('historic_files'):
-    os.makedirs('historic_files')
+# Create a folder named 'historic_files_2004' if it doesn't exist
+if not os.path.exists('historic_files_2004'):
+    os.makedirs('historic_files_2004')
 
-# Loop through the years and months to construct the URLs and download the historic_files
-for year in tqdm(range(2010, 2020)):
+# Loop through the years and months to construct the URLs and download the historic_files_2004
+for year in tqdm(range(2004, 2020)):
     for month in range(1, 13):
+        # Extract last two digits of year for URL
+        # url_year = str(year)[2:] if year <= 2005 else year
+
         # Construct the URL
-        url = f"https://www.census.gov/construction/bps/txt/t2yu{year}{month:02d}.txt"
+        url = f"https://www.census.gov/construction/bps/txt/tb2u{year}{month:02d}.txt"
 
         # Construct the file path
-        file_path = f"SCRAPING_DATA/historic_files/t2yu{year}{month:02d}.txt"
+        file_path = f"historic_files_2004/{year}{month:02d}.txt"
 
         try:
             # Download the file

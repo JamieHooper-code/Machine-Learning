@@ -1,12 +1,12 @@
 import os
 import pandas as pd
 
-# Specify the directory containing the text historic_files
-directory = "historic_files"
+# Specify the directory containing the text historic_files_2004
+directory = "historic_files_2004"
 
-# Loop through all the historic_files in the directory
+# Loop through all the historic_files_2004 in the directory
 for filename in os.listdir(directory):
-    # Check if the filename matches the expected format (text historic_files)
+    # Check if the filename matches the expected format (text historic_files_2004)
     if filename.endswith(".txt"):
         try:
             # Construct the file path

@@ -2,11 +2,11 @@ import os
 import requests
 from tqdm import tqdm
 
-# Create a folder named 'historic_files' if it doesn't exist
+# Create a folder named 'historic_files_2004' if it doesn't exist
 if not os.path.exists('new_files'):
     os.makedirs('new_files')
 
-# Loop through the years and months to construct the URLs and download the historic_files
+# Loop through the years and months to construct the URLs and download the historic_files_2004
 for year in tqdm(range(2019, 2024)):
     for month in range(1, 13):
         # Construct the URL

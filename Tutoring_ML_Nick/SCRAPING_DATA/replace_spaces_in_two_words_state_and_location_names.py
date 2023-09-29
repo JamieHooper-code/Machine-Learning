@@ -1,7 +1,7 @@
 import os
 import re
 
-# Specify the directory containing the historic_files
+# Specify the directory containing the historic_files_2004
 directory = "TEST_FILES"
 
 # List of strings to replace (case insensitive)
@@ -33,9 +33,9 @@ strings_to_replace = [
     "or More"
 ]
 
-# Loop through all the historic_files in the directory
+# Loop through all the historic_files_2004 in the directory
 for filename in os.listdir(directory):
-    # Check if the filename matches the expected format (text historic_files)
+    # Check if the filename matches the expected format (text historic_files_2004)
     if filename.endswith(".txt"):
         try:
             # Construct the file path

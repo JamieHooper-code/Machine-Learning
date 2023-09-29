@@ -4,10 +4,10 @@ import os
 # Get the path to the directory of the script
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
-# Get the path to the historic_files directory
-historic_files_dir = os.path.join(script_dir, "new_files_test_test")
+# Get the path to the historic_files_2004 directory
+historic_files_dir = os.path.join(script_dir, "historic_files_v3")
 
-# Get a list of all Excel files in the historic_files directory
+# Get a list of all Excel files in the historic_files_2004 directory
 excel_files = [f for f in os.listdir(historic_files_dir) if f.endswith(('.xlsx', '.xls'))]
 
 # Iterate through all the Excel files
@@ -25,4 +25,4 @@ for excel_file in excel_files:
     # Save the cleaned data back to the current Excel file
     df.to_excel(file_path, index=False)
 
-print("All Excel files in the historic_files directory have been cleaned.")
+print("All Excel files in the historic_files_2004 directory have been cleaned.")

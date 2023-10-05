@@ -29,7 +29,7 @@ df.reset_index(inplace=True)
 df.sort_values(by=['State', 'Date'], inplace=True)
 
 # Save the new DataFrame in the same folder as a CSV file
-output_filepath = filepath.rsplit('\\', 1)[0] + '\\master_dataset_v7_long_with_lags.csv'
+output_filepath = filepath.rsplit('\\', 1)[0] + '\\v7.csv'
 df.to_csv(output_filepath, index=False)
 
 # Check the new DataFrame

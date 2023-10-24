@@ -10,13 +10,6 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="\Tutoring_ML_Nick\MODEL_CREATION\master_dataset_v7_long_with_lags.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
         <entry key="\Tutoring_ML_Nick\MODEL_CREATION\v8.csv">
           <value>
             <Attribute>
